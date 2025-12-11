@@ -3,7 +3,7 @@ import Card from './components/Card'
 
 const bigTechJobs = [
   {
-    brandLogo: "https://example.com/meta-logo.png",
+    brandLogo: "../public/meta.jpg",
     name: "Meta",
     datePosted: "2 days ago",
     post: "Software Engineer",
@@ -13,7 +13,7 @@ const bigTechJobs = [
     location: "Menlo Park, CA"
   },
   {
-    brandLogo: "https://example.com/amazon-logo.png",
+    brandLogo: "../public/amazon.png",
     name: "Amazon",
     datePosted: "1 day ago",
     post: "Cloud Engineer",
@@ -23,7 +23,7 @@ const bigTechJobs = [
     location: "Seattle, WA"
   },
   {
-    brandLogo: "https://example.com/apple-logo.png",
+    brandLogo: "../public/apple.png",
     name: "Apple",
     datePosted: "2 days ago",
     post: "Product Manager",
@@ -33,7 +33,7 @@ const bigTechJobs = [
     location: "Cupertino, CA"
   },
   {
-    brandLogo: "https://example.com/netflix-logo.png",
+    brandLogo: "../public/netflix.png",
     name: "Netflix",
     datePosted: "1 day ago",
     post: "Data Scientist",
@@ -43,7 +43,7 @@ const bigTechJobs = [
     location: "Los Gatos, CA"
   },
   {
-    brandLogo: "https://example.com/google-logo.png",
+    brandLogo: "../public/google.png",
     name: "Google",
     datePosted: "2 days ago",
     post: "Machine Learning Engineer",
@@ -53,7 +53,7 @@ const bigTechJobs = [
     location: "Mountain View, CA"
   },
   {
-    brandLogo: "https://example.com/microsoft-logo.png",
+    brandLogo: "../public/microsoft.png",
     name: "Microsoft",
     datePosted: "1 day ago",
     post: "Azure Developer",
@@ -63,7 +63,7 @@ const bigTechJobs = [
     location: "Redmond, WA"
   },
   {
-    brandLogo: "https://example.com/nvidia-logo.png",
+    brandLogo: "../public/nvdia.png",
     name: "NVIDIA",
     datePosted: "2 days ago",
     post: "AI Researcher",
@@ -73,7 +73,7 @@ const bigTechJobs = [
     location: "Santa Clara, CA"
   },
   {
-    brandLogo: "https://example.com/meta-logo.png",
+    brandLogo: "../public/meta.jpg",
     name: "Meta",
     datePosted: "1 day ago",
     post: "Product Designer",
@@ -83,7 +83,7 @@ const bigTechJobs = [
     location: "New York, NY"
   },
   {
-    brandLogo: "https://example.com/amazon-logo.png",
+    brandLogo: "../public/amazon.png",
     name: "Amazon",
     datePosted: "2 days ago",
     post: "SDE Intern",
@@ -93,7 +93,7 @@ const bigTechJobs = [
     location: "Austin, TX"
   },
   {
-    brandLogo: "https://example.com/google-logo.png",
+    brandLogo: "../public/google.png",
     name: "Google",
     datePosted: "1 day ago",
     post: "Frontend Developer",
@@ -109,7 +109,7 @@ const App = () => {
   return (
     <div className='parent'>
       {bigTechJobs.map(function(element){
-        return <Card company={element.name} day={element.datePosted} role={element.post} tag1={element.tag1} tag2={element.tag2} salary={element.pay} location={element.location} />
+        return <Card brandLogo={element.brandLogo} company={element.name} day={element.datePosted} role={element.post} tag1={element.tag1} tag2={element.tag2} salary={element.pay}  />
       })}
     </div>
   )
