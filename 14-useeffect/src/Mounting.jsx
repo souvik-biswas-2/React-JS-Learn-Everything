@@ -7,7 +7,7 @@ const Mounting = () => {
 
     useEffect(() => {
         console.log('Use Effect is running....');
-    })
+    },[])
     
 
   return (
