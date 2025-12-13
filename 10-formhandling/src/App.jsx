@@ -1,10 +1,11 @@
 import React from 'react'
 import Form from './Form'
+import TwoWayBinding from './TwoWayBinding'
 
 const App = () => {
   return (
     <div>
-      <Form />
+      <TwoWayBinding />
     </div>
   )
 }
